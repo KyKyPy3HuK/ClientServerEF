@@ -20,7 +20,7 @@ namespace CourseWorkApp.Model
         {
             optionsBuilder.UseSqlServer
             (
-                @"Server = POZERPC;
+                @"Server = USERPC;
                 Database = CourseWorkEF;
                 Integrated Security=true;
                 Encrypt = True;
