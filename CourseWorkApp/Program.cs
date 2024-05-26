@@ -13,13 +13,13 @@ namespace CourseWorkApp
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            
+            var a = "sdsd".ToCharArray().GetHashCode();
             loginForm loginForm = new loginForm();
             switch (loginForm.ShowDialog())
             {
                 case DialogResult.OK:
 
-                    if (true)//PassHashFunc(loginForm.passTextBox.Text.ToString())== passwordHash)
+                    if (PassHashFunc(loginForm.passTextBox.Text.ToString())== passwordHash)
                         Application.Run(new MainForm());
                     else
                     {
@@ -34,6 +34,7 @@ namespace CourseWorkApp
         static private long PassHashFunc(string arg)
         {
             long sum = 0;
+
             foreach (char c in arg)
             {
                 sum += c * 256;

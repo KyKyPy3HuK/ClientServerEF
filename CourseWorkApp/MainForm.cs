@@ -1,8 +1,10 @@
 ﻿using CourseWorkApp.Model;
 using CourseWorkApp.View;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -14,11 +16,56 @@ namespace CourseWorkApp
 {
     public partial class MainForm : Form
     {
+
+        SqlConnection conn = new SqlConnection();
+
+        void ConnectDb()
+        {
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings["Config"].ConnectionString;
+            try
+            {
+                conn.Open();
+            }
+            catch (SqlException ex)
+            {
+                conn.Close();
+                MessageBox.Show(ex.Message, "Ошибка подключения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         public MainForm()
         {
             InitializeComponent();
+            ConnectDb();
+            FillInventDgv();
+            FillIssueDgv();
         }
+        void FillIssueDgv()
+        {
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = "SELECT *" +
+                "FROM issuesView";
 
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dataTable = new DataTable();
+            issuesDgv.DataSource = dataTable;
+            dataTable.Clear();
+            adapter.Fill(dataTable);
+        }
+        void FillInventDgv()
+        {
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = "SELECT *" +
+                "FROM inventView";
+
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dataTable = new DataTable();
+            inventDgv.DataSource = dataTable;
+            dataTable.Clear();
+            adapter.Fill(dataTable);
+
+        }
+        
         private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             inventAdd inventAddDlg = new inventAdd();
@@ -146,6 +193,26 @@ namespace CourseWorkApp
         {
             IssueAddDlg issueAddDlg = new IssueAddDlg();
             switch (issueAddDlg.ShowDialog())
+            {
+                case DialogResult.OK:
+                    {
+                        break;
+                    }
+                case DialogResult.Cancel:
+                    {
+                        break;
+                    }
+                default:
+                    {
+                        break;
+                    }
+            }
+        }
+
+        private void обновитьСтатусToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IssueUpdateDlg issueUpdateDlg = new IssueUpdateDlg();
+            switch (issueUpdateDlg.ShowDialog())
             {
                 case DialogResult.OK:
                     {

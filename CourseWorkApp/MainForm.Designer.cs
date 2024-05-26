@@ -30,33 +30,33 @@
         {
             tabControl = new TabControl();
             vahtsTabPage = new TabPage();
-            dataGridView2 = new DataGridView();
+            vahtsDgv = new DataGridView();
             menuStrip2 = new MenuStrip();
             добавитьToolStripMenuItem1 = new ToolStripMenuItem();
             изменитьToolStripMenuItem = new ToolStripMenuItem();
             удалитьToolStripMenuItem = new ToolStripMenuItem();
             inventTabPage = new TabPage();
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
+            inventDgv = new DataGridView();
             menuStrip1 = new MenuStrip();
             добавитьToolStripMenuItem = new ToolStripMenuItem();
             обновитьToolStripMenuItem = new ToolStripMenuItem();
             удалитьToolStripMenuItem1 = new ToolStripMenuItem();
             zayavTabPage = new TabPage();
-            dataGridView3 = new DataGridView();
+            issuesDgv = new DataGridView();
             menuStrip3 = new MenuStrip();
             добавитьToolStripMenuItem2 = new ToolStripMenuItem();
             обновитьСтатусToolStripMenuItem = new ToolStripMenuItem();
             tabControl.SuspendLayout();
             vahtsTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)vahtsDgv).BeginInit();
             menuStrip2.SuspendLayout();
             inventTabPage.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)inventDgv).BeginInit();
             menuStrip1.SuspendLayout();
             zayavTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)issuesDgv).BeginInit();
             menuStrip3.SuspendLayout();
             SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             // 
             // vahtsTabPage
             // 
-            vahtsTabPage.Controls.Add(dataGridView2);
+            vahtsTabPage.Controls.Add(vahtsDgv);
             vahtsTabPage.Controls.Add(menuStrip2);
             vahtsTabPage.Location = new Point(4, 29);
             vahtsTabPage.Name = "vahtsTabPage";
@@ -84,15 +84,22 @@
             vahtsTabPage.Text = "Вахты";
             vahtsTabPage.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // vahtsDgv
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Dock = DockStyle.Fill;
-            dataGridView2.Location = new Point(3, 31);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(786, 383);
-            dataGridView2.TabIndex = 1;
+            vahtsDgv.AllowUserToAddRows = false;
+            vahtsDgv.AllowUserToDeleteRows = false;
+            vahtsDgv.AllowUserToOrderColumns = true;
+            vahtsDgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            vahtsDgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            vahtsDgv.Dock = DockStyle.Fill;
+            vahtsDgv.Location = new Point(3, 31);
+            vahtsDgv.MultiSelect = false;
+            vahtsDgv.Name = "vahtsDgv";
+            vahtsDgv.ReadOnly = true;
+            vahtsDgv.RowHeadersWidth = 51;
+            vahtsDgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            vahtsDgv.Size = new Size(786, 383);
+            vahtsDgv.TabIndex = 1;
             // 
             // menuStrip2
             // 
@@ -139,22 +146,29 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(inventDgv);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(3, 31);
             panel1.Name = "panel1";
             panel1.Size = new Size(786, 383);
             panel1.TabIndex = 3;
             // 
-            // dataGridView1
+            // inventDgv
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(786, 383);
-            dataGridView1.TabIndex = 0;
+            inventDgv.AllowUserToAddRows = false;
+            inventDgv.AllowUserToDeleteRows = false;
+            inventDgv.AllowUserToOrderColumns = true;
+            inventDgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            inventDgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            inventDgv.Dock = DockStyle.Fill;
+            inventDgv.Location = new Point(0, 0);
+            inventDgv.MultiSelect = false;
+            inventDgv.Name = "inventDgv";
+            inventDgv.ReadOnly = true;
+            inventDgv.RowHeadersWidth = 51;
+            inventDgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            inventDgv.Size = new Size(786, 383);
+            inventDgv.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -189,7 +203,7 @@
             // 
             // zayavTabPage
             // 
-            zayavTabPage.Controls.Add(dataGridView3);
+            zayavTabPage.Controls.Add(issuesDgv);
             zayavTabPage.Controls.Add(menuStrip3);
             zayavTabPage.Location = new Point(4, 29);
             zayavTabPage.Name = "zayavTabPage";
@@ -199,15 +213,22 @@
             zayavTabPage.Text = "Заявки";
             zayavTabPage.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // issuesDgv
             // 
-            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView3.Dock = DockStyle.Fill;
-            dataGridView3.Location = new Point(3, 31);
-            dataGridView3.Name = "dataGridView3";
-            dataGridView3.RowHeadersWidth = 51;
-            dataGridView3.Size = new Size(786, 383);
-            dataGridView3.TabIndex = 1;
+            issuesDgv.AllowUserToAddRows = false;
+            issuesDgv.AllowUserToDeleteRows = false;
+            issuesDgv.AllowUserToOrderColumns = true;
+            issuesDgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            issuesDgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            issuesDgv.Dock = DockStyle.Fill;
+            issuesDgv.Location = new Point(3, 31);
+            issuesDgv.MultiSelect = false;
+            issuesDgv.Name = "issuesDgv";
+            issuesDgv.ReadOnly = true;
+            issuesDgv.RowHeadersWidth = 51;
+            issuesDgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            issuesDgv.Size = new Size(786, 383);
+            issuesDgv.TabIndex = 1;
             // 
             // menuStrip3
             // 
@@ -231,6 +252,7 @@
             обновитьСтатусToolStripMenuItem.Name = "обновитьСтатусToolStripMenuItem";
             обновитьСтатусToolStripMenuItem.Size = new Size(137, 24);
             обновитьСтатусToolStripMenuItem.Text = "Обновить статус";
+            обновитьСтатусToolStripMenuItem.Click += обновитьСтатусToolStripMenuItem_Click;
             // 
             // MainForm
             // 
@@ -244,18 +266,18 @@
             tabControl.ResumeLayout(false);
             vahtsTabPage.ResumeLayout(false);
             vahtsTabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)vahtsDgv).EndInit();
             menuStrip2.ResumeLayout(false);
             menuStrip2.PerformLayout();
             inventTabPage.ResumeLayout(false);
             inventTabPage.PerformLayout();
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)inventDgv).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             zayavTabPage.ResumeLayout(false);
             zayavTabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)issuesDgv).EndInit();
             menuStrip3.ResumeLayout(false);
             menuStrip3.PerformLayout();
             ResumeLayout(false);
@@ -267,16 +289,16 @@
         private TabPage vahtsTabPage;
         private TabPage inventTabPage;
         private Panel panel1;
-        private DataGridView dataGridView1;
+        private DataGridView inventDgv;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem добавитьToolStripMenuItem;
         private TabPage zayavTabPage;
-        private DataGridView dataGridView2;
+        private DataGridView vahtsDgv;
         private MenuStrip menuStrip2;
         private ToolStripMenuItem добавитьToolStripMenuItem1;
         private ToolStripMenuItem изменитьToolStripMenuItem;
         private ToolStripMenuItem удалитьToolStripMenuItem;
-        private DataGridView dataGridView3;
+        private DataGridView issuesDgv;
         private MenuStrip menuStrip3;
         private ToolStripMenuItem добавитьToolStripMenuItem2;
         private ToolStripMenuItem обновитьСтатусToolStripMenuItem;
