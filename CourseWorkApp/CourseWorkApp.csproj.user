@@ -4,5 +4,32 @@
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\inventAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\inventRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\inventUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\IssueAddDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\IssueUpdateDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\vahtAddDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\vahtRemoveDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\vahtUpdDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
