@@ -413,3 +413,4 @@ FodyWeavers.xsd
 /.vs/CourseWorkApp/FileContentIndex/f2c79b00-9444-4788-a85b-ba3f2181a3c7.vsidx
 /.vs/slnx.sqlite
 /.vs/VSWorkspaceState.json
+/CourseWorkApp/obj/Debug/net8.0-windows/CourseWorkApp.designer.runtimeconfig.json
