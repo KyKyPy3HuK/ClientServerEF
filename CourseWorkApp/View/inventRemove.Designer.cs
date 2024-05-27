@@ -31,15 +31,15 @@
             labelNum = new Label();
             numLabel = new Label();
             labelName = new Label();
-            label4 = new Label();
+            nameLabel = new Label();
             labelDate = new Label();
-            label6 = new Label();
+            dateLabel = new Label();
             labelCost = new Label();
-            label8 = new Label();
+            costLabel = new Label();
             cancelBtn = new Button();
             delBtn = new Button();
             label1 = new Label();
-            label3 = new Label();
+            roomLabel = new Label();
             SuspendLayout();
             // 
             // labelNum
@@ -69,14 +69,14 @@
             labelName.TabIndex = 2;
             labelName.Text = "Наименование";
             // 
-            // label4
+            // nameLabel
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(198, 29);
-            label4.Name = "label4";
-            label4.Size = new Size(138, 20);
-            label4.TabIndex = 3;
-            label4.Text = "defНаименование";
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new Point(198, 29);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new Size(138, 20);
+            nameLabel.TabIndex = 3;
+            nameLabel.Text = "defНаименование";
             // 
             // labelDate
             // 
@@ -87,14 +87,14 @@
             labelDate.TabIndex = 4;
             labelDate.Text = "Дата поставки";
             // 
-            // label6
+            // dateLabel
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(198, 49);
-            label6.Name = "label6";
-            label6.Size = new Size(63, 20);
-            label6.TabIndex = 5;
-            label6.Text = "defДата";
+            dateLabel.AutoSize = true;
+            dateLabel.Location = new Point(198, 49);
+            dateLabel.Name = "dateLabel";
+            dateLabel.Size = new Size(63, 20);
+            dateLabel.TabIndex = 5;
+            dateLabel.Text = "defДата";
             // 
             // labelCost
             // 
@@ -105,14 +105,14 @@
             labelCost.TabIndex = 6;
             labelCost.Text = "Закупочная стоимость";
             // 
-            // label8
+            // costLabel
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(198, 69);
-            label8.Name = "label8";
-            label8.Size = new Size(105, 20);
-            label8.TabIndex = 7;
-            label8.Text = "defСтоимость";
+            costLabel.AutoSize = true;
+            costLabel.Location = new Point(198, 69);
+            costLabel.Name = "costLabel";
+            costLabel.Size = new Size(105, 20);
+            costLabel.TabIndex = 7;
+            costLabel.Text = "defСтоимость";
             // 
             // cancelBtn
             // 
@@ -143,29 +143,29 @@
             label1.TabIndex = 10;
             label1.Text = "Комната";
             // 
-            // label3
+            // roomLabel
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(198, 89);
-            label3.Name = "label3";
-            label3.Size = new Size(91, 20);
-            label3.TabIndex = 11;
-            label3.Text = "defКомната";
+            roomLabel.AutoSize = true;
+            roomLabel.Location = new Point(198, 89);
+            roomLabel.Name = "roomLabel";
+            roomLabel.Size = new Size(91, 20);
+            roomLabel.TabIndex = 11;
+            roomLabel.Text = "defКомната";
             // 
             // inventRemove
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(473, 145);
-            Controls.Add(label3);
+            Controls.Add(roomLabel);
             Controls.Add(label1);
             Controls.Add(delBtn);
             Controls.Add(cancelBtn);
-            Controls.Add(label8);
+            Controls.Add(costLabel);
             Controls.Add(labelCost);
-            Controls.Add(label6);
+            Controls.Add(dateLabel);
             Controls.Add(labelDate);
-            Controls.Add(label4);
+            Controls.Add(nameLabel);
             Controls.Add(labelName);
             Controls.Add(numLabel);
             Controls.Add(labelNum);
@@ -178,16 +178,16 @@
         #endregion
 
         private Label labelNum;
-        private Label numLabel;
         private Label labelName;
-        private Label label4;
         private Label labelDate;
-        private Label label6;
         private Label labelCost;
-        private Label label8;
         private Button cancelBtn;
         private Button delBtn;
         private Label label1;
-        private Label label3;
+        public Label numLabel;
+        public Label nameLabel;
+        public Label dateLabel;
+        public Label costLabel;
+        public Label roomLabel;
     }
 }

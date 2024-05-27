@@ -7,6 +7,9 @@
     <Compile Update="View\inventAdd.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\inventAllCostDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\inventRemove.cs">
       <SubType>Form</SubType>
     </Compile>

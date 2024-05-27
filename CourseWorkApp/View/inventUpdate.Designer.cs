@@ -104,6 +104,7 @@
             // costNumeric
             // 
             costNumeric.Location = new Point(218, 98);
+            costNumeric.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             costNumeric.Name = "costNumeric";
             costNumeric.Size = new Size(122, 27);
             costNumeric.TabIndex = 8;
@@ -179,10 +180,10 @@
         private Button cancelBtn;
         private Button okBtn;
         private Label labelCode;
-        private Label numLabel;
         public TextBox nameTextBox;
         public DateTimePicker dateTimePicker;
         public ComboBox roomComboBox;
         public NumericUpDown costNumeric;
+        public Label numLabel;
     }
 }

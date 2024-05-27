@@ -103,6 +103,7 @@
             // costNumeric
             // 
             costNumeric.Location = new Point(218, 78);
+            costNumeric.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             costNumeric.Name = "costNumeric";
             costNumeric.Size = new Size(122, 27);
             costNumeric.TabIndex = 8;

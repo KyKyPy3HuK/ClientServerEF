@@ -36,6 +36,8 @@
             labelText = new Label();
             okBtn = new Button();
             cancelBtn = new Button();
+            autorLabel = new Label();
+            dataLabel = new Label();
             SuspendLayout();
             // 
             // numLabel
@@ -58,7 +60,7 @@
             // 
             // textTextBox
             // 
-            textTextBox.Location = new Point(12, 138);
+            textTextBox.Location = new Point(12, 146);
             textTextBox.Multiline = true;
             textTextBox.Name = "textTextBox";
             textTextBox.ReadOnly = true;
@@ -87,7 +89,7 @@
             // labelText
             // 
             labelText.AutoSize = true;
-            labelText.Location = new Point(12, 115);
+            labelText.Location = new Point(12, 123);
             labelText.Name = "labelText";
             labelText.Size = new Size(45, 20);
             labelText.TabIndex = 5;
@@ -96,7 +98,7 @@
             // okBtn
             // 
             okBtn.DialogResult = DialogResult.OK;
-            okBtn.Location = new Point(344, 326);
+            okBtn.Location = new Point(344, 334);
             okBtn.Name = "okBtn";
             okBtn.Size = new Size(128, 29);
             okBtn.TabIndex = 4;
@@ -106,18 +108,38 @@
             // cancelBtn
             // 
             cancelBtn.DialogResult = DialogResult.Cancel;
-            cancelBtn.Location = new Point(210, 326);
+            cancelBtn.Location = new Point(210, 334);
             cancelBtn.Name = "cancelBtn";
             cancelBtn.Size = new Size(128, 29);
             cancelBtn.TabIndex = 3;
             cancelBtn.Text = "Отмена";
             cancelBtn.UseVisualStyleBackColor = true;
             // 
+            // autorLabel
+            // 
+            autorLabel.AutoSize = true;
+            autorLabel.Location = new Point(12, 338);
+            autorLabel.Name = "autorLabel";
+            autorLabel.Size = new Size(51, 20);
+            autorLabel.TabIndex = 6;
+            autorLabel.Text = "Автор";
+            // 
+            // dataLabel
+            // 
+            dataLabel.AutoSize = true;
+            dataLabel.Location = new Point(12, 103);
+            dataLabel.Name = "dataLabel";
+            dataLabel.Size = new Size(41, 20);
+            dataLabel.TabIndex = 7;
+            dataLabel.Text = "Дата";
+            // 
             // IssueUpdateDlg
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(482, 361);
+            ClientSize = new Size(482, 373);
+            Controls.Add(dataLabel);
+            Controls.Add(autorLabel);
             Controls.Add(cancelBtn);
             Controls.Add(okBtn);
             Controls.Add(labelText);
@@ -133,14 +155,15 @@
         }
 
         #endregion
-
-        private Label numLabel;
-        private Label titleLabel;
-        private TextBox textTextBox;
         private Label statusLabel;
         private Label labelText;
         private Button okBtn;
         private Button cancelBtn;
         public ComboBox statusComboBox;
+        public Label numLabel;
+        public Label titleLabel;
+        public TextBox textTextBox;
+        public Label autorLabel;
+        public Label dataLabel;
     }
 }

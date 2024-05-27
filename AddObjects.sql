@@ -282,12 +282,12 @@ BEGIN
 END
 GO
 
-CREATE PROC insertIssue (@title varchar(127), @date datetime, @text varchar(max), @author int)
+ALTER PROC insertIssue (@title varchar(127), @text varchar(max), @author int)
 AS
 IF EXISTS(SELECT * FROM Проживающие WHERE Проживающие.Код = @author)
 BEGIN
-	INSERT INTO Заявки (Заявки.Тема,Заявки.ДатаСоздания, Заявки.Текст, Заявки.Составитель) VALUES
-	(@title, @date,  @text, @author )
+	INSERT INTO Заявки (Заявки.Тема, Заявки.Текст, Заявки.Составитель) VALUES
+	(@title,  @text, @author )
 	RETURN 0
 END
 ELSE
@@ -363,7 +363,7 @@ GO
 
 EXEC updateIssue 3, 'Отклонена'
 
-EXEC insertIssue 'Здоровье', '', 'Требую 8ми часовой сом' , 2
+EXEC insertIssue 'Ремонт',  'Сломалась психика' , 2
 GO
 SELECT * 
 FROM Проживающие
