@@ -1,4 +1,4 @@
-﻿using CourseWorkApp.Model;
+﻿
 using CourseWorkApp.View;
 using Microsoft.Data.SqlClient;
 using Microsoft.Identity.Client.NativeInterop;

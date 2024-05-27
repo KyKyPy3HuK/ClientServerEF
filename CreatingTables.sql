@@ -1,103 +1,97 @@
-use master
+use master 
+go
 use CourseWorkSQL
-CREATE TABLE ТипыПроживающих (
-	Название varchar(127) PRIMARY KEY NOT NULL,
-	Тариф int NOT NULL DEFAULT 1000,
-	Описание varchar(MAX)
-)
-
-CREATE TABLE ТипыКомнат (
-	Название varchar(127) PRIMARY KEY NOT NULL,
-	Описание varchar(MAX),
-	КойкоМеста int NOT NULL DEFAULT 0
-)
-
-CREATE TABLE ТипыБлоков (
-	Название varchar(127) PRIMARY KEY NOT NULL,
-	Описание varchar(MAX)
-)
-
-CREATE TABLE Должности (
-	Название varchar(127) PRIMARY KEY NOT NULL,
-	Описание varchar(MAX),
-	Оклад int NOT NULL DEFAULT 19000
-)
-
-CREATE TABLE ТипыВахт (
-	Название varchar(127) PRIMARY KEY NOT NULL,
-	Описание varchar(MAX),
-	Ставка int NOT NULL DEFAULT 1,
-)
-
-CREATE TABLE Работники (
-	Код int PRIMARY KEY NOT NULL,
-	ФИО varchar(127) NOT NULL,
-	Паспорт int NOT NULL UNIQUE,
-	Телефон varchar(127) NOT NULL,
-	Должность varchar(127) NOT NULL,
-	FOREIGN KEY (Должность) REFERENCES Должности
-)
-
-CREATE TABLE Блоки (
-	Номер int PRIMARY KEY NOT NULL,
-	Этаж int NOT NULL,
-	Крыло int NOT NULL,
-	Тип varchar(127) NOT NULL,
-	Дежурный int,
-	FOREIGN KEY (Тип) REFERENCES ТипыБлоков,
-	FOREIGN KEY (Дежурный) REFERENCES Работники
-)
-
-CREATE TABLE Комнаты (
-	Номер int PRIMARY KEY NOT NULL,
-	Тип varchar(127) NOT NULL,
-	Блок int NOT NULL,
-	FOREIGN KEY (Тип) REFERENCES ТипыКомнат,
-	FOREIGN KEY (Блок) REFERENCES Блоки
-)
-
-CREATE TABLE Проживающие (
-	Код int PRIMARY KEY NOT NULL,
-	ФИО varchar(127) NOT NULL,
-	Паспорт int NOT NULL UNIQUE,
-	Телефон varchar(127) NOT NULL,
-	Пол varchar(3) NOT NULL,
-	ДатаРождения date NOT NULL,
-	Тип varchar(127) NOT NULL,
-	Комната int NOT NULL,
-	FOREIGN KEY (Тип) REFERENCES ТипыПроживающих,
-	FOREIGN KEY (Комната) REFERENCES Комнаты
-)
-
-
-
-CREATE TABLE Заявки (
-	Номер int PRIMARY KEY NOT NULL,
-	Тема varchar(127) NOT NULL DEFAULT 'Без темы',
-	Статус varchar(127) NOT NULL DEFAULT 'Открыта',
-	ДатаСоздания date NOT NULL,
+go
+BEGIN TRANSACTION addTables
+	CREATE TABLE ТипыПроживающих (
+		Название varchar(127) PRIMARY KEY NOT NULL,
+		Тариф int NOT NULL
+	)
+	GO
+	CREATE TABLE ТипыКомнат (
+		Название varchar(127) PRIMARY KEY NOT NULL,
+		КойкоМеста int NOT NULL
+	)
+	GO
+	CREATE TABLE Должности (
+		Название varchar(127) PRIMARY KEY NOT NULL,
+		Оклад int NOT NULL
+	)
+	GO
+	CREATE TABLE ТипыВахт (
+		Название varchar(127) PRIMARY KEY NOT NULL,
+		Ставка int NOT NULL
+	)
+	GO
+	CREATE TABLE Работники (
+		Код bigint PRIMARY KEY NOT NULL,
+		ФИО varchar(127) NOT NULL,
+		Телефон varchar(127) NOT NULL,
+		Должность varchar(127) NOT NULL,
+		FOREIGN KEY (Должность) REFERENCES Должности
+	)
+	GO
+	CREATE TABLE Блоки (
+		Номер int PRIMARY KEY NOT NULL,
+		Этаж int NOT NULL,
+		Крыло int NOT NULL,
+		Тип blockType NOT NULL
+	)
+	GO
+	CREATE TABLE Комнаты (
+		Номер int PRIMARY KEY NOT NULL,
+		Тип varchar(127) NOT NULL,
+		Блок int NOT NULL,
+		FOREIGN KEY (Тип) REFERENCES ТипыКомнат,
+		FOREIGN KEY (Блок) REFERENCES Блоки
+	)
+	GO
+	CREATE TABLE Проживающие (
+		Код bigint PRIMARY KEY NOT NULL,
+		ФИО varchar(127) NOT NULL,
+		Телефон varchar(127) NOT NULL,
+		Пол varchar(3) NOT NULL,
+		ДатаРождения date NOT NULL,
+		Тип varchar(127) NOT NULL,
+		Комната int NOT NULL,
+		FOREIGN KEY (Тип) REFERENCES ТипыПроживающих,
+		FOREIGN KEY (Комната) REFERENCES Комнаты
+	)
+	GO
+	CREATE TABLE Заявки (
+	Номер int PRIMARY KEY NOT NULL IDENTITY(1,1),
+	Тема varchar(127) NOT NULL,
+	Статус statusType NOT NULL,
+	ДатаСоздания date NOT NULL default GETDATE(),
 	Текст varchar(MAX),
-	Составитель int NOT NULL,
-	Ответственный int,
+	Составитель bigint NOT NULL,
 	FOREIGN KEY (Составитель) REFERENCES Проживающие,
-	FOREIGN KEY (Ответственный) REFERENCES Работники
-)
-
+	)
+	GO
 CREATE TABLE Инвентарь (
-	Название varchar(127) PRIMARY KEY NOT NULL,
-	Описание varchar(MAX),
-	ДатаПоставки date NOT NULL,
-	Стоимость int NOT NULL DEFAULT 0,
+	Код int PRIMARY KEY NOT NULL IDENTITY(1,1),
+	Название varchar(127) NOT NULL,
+	ДатаПоставки date NOT NULL default GETDATE(),
+	Стоимость int NOT NULL,
 	Комната int NOT NULL,
 	FOREIGN KEY (Комната) REFERENCES Комнаты,
 )
-
-CREATE TABLE Вахты (
-	Код int PRIMARY KEY NOT NULL,
-	Тип varchar(127) NOT NULL,
-	FOREIGN KEY (Тип) REFERENCES ТипыВахт,
-	ДатаНачала date NOT NULL,
-	Длительность int NOT NULL DEFAULT 12,
-	Вахтер int,
-	FOREIGN KEY (Вахтер) REFERENCES Работники
-)
+	GO
+	CREATE TABLE Вахты (
+		Номер int PRIMARY KEY NOT NULL IDENTITY(1,1),
+		Тип varchar(127) NOT NULL,
+		FOREIGN KEY (Тип) REFERENCES ТипыВахт,
+		ДатаНачала date NOT NULL default GETDATE(),
+		Длительность int NOT NULL,
+		Вахтер bigint,
+		FOREIGN KEY (Вахтер) REFERENCES Работники
+	)
+	GO
+	CREATE TABLE Дежурство(
+		Блок int PRIMARY KEY NOT NULL,
+		Дежурный bigint NOT NULL,
+		FOREIGN KEY(Блок) REFERENCES Блоки,
+		FOREIGN KEY(Дежурный) REFERENCES Работники
+	)
+	GO
+COMMIT TRANSACTION addTables

@@ -1,7 +1,10 @@
+
+--Представление для вывода заявок в приложении--
 CREATE VIEW issuesView AS
 SELECT З.Номер,З.Тема,З.Статус,З.ДатаСоздания,З.Текст,п.ФИО  as Составитель, З.Составитель AS Код
 FROM Заявки З JOIN Проживающие П ON З.Составитель = П.Код
 GO
+--Представление для вывода инвентаря в приложении--
 CREATE VIEW inventView AS
 SELECT И.*, К.Блок as Блок, Всего = 
 	(SELECT count(*)
@@ -9,12 +12,13 @@ SELECT И.*, К.Блок as Блок, Всего =
 	WHERE В.Название = И.Название)
 FROM Инвентарь И JOIN Комнаты К ON Комната = К.Номер
 GO
+--Представление для вывода вахт в приложении--
 CREATE VIEW vahtsView AS
 SELECT В.*, Р.ФИО AS Фио
 FROM Вахты В JOIN Работники Р ON В.Вахтер = Р.Код
 GO
 
-
+--Правило для номера телефона--
 CREATE RULE telRule AS
 (@tel LIKE '+7([0-9][0-9][0-9])[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]') OR
 (@tel LIKE '8([0-9][0-9][0-9])[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]') 
@@ -24,7 +28,7 @@ GO
 EXEC sp_bindrule telRule, 'Работники.Телефон'
 GO
 
-
+--Правило для ФИО--
 CREATE RULE fioRule AS
 @fio LIKE '[А-Я]% [А-Я]% [А-Я]%' 
 GO
@@ -33,7 +37,7 @@ GO
 EXEC sp_bindrule fioRule, 'Работники.ФИО'
 GO
 
-
+--Правило для значений которые должны быть больше нуля--
 CREATE RULE notNegativeRule AS
 @value >= 0 
 GO
@@ -50,7 +54,7 @@ GO
 EXEC sp_bindRule notNegativeRule, 'Инвентарь.Стоимость'
 GO
 
-
+--Пользовательский тип для типа блока--
 CREATE TYPE blockType FROM VARCHAR(127) 
 GO
 CREATE RULE blockTypeRule AS
@@ -64,6 +68,7 @@ GO
 EXEC sp_bindRule blockTypeRule, blockType 
 GO
 
+--Пользовательский тип для статуса заявок--
 CREATE TYPE statusType FROM VARCHAR(127)
 GO
 CREATE RULE statusRule AS
@@ -80,7 +85,7 @@ GO
 EXEC sp_bindefault issueStatusDefault, statusType 
 GO
 
-
+--Правило для номера паспорта--
 CREATE RULE passportRule AS
  @value >= 1000000000 AND  @value <= 9999999999
 GO
@@ -89,17 +94,8 @@ GO
 EXEC sp_bindRule passportRule, 'Проживающие.Код' 
 GO
 
-SELECT *
-FROM issuesView
-GO
-SELECT *
-FROM inventView
-GO
-SELECT *
-FROM vahtsView
-GO
- 
-CREATE TRIGGER cascadeDeleteBlock ON Комнаты
+ --Триггер каскадного удаления проживающих в удаляемой комнате, их заявок и инвентаря--
+CREATE TRIGGER cascadeDeleteRoom ON Комнаты
 INSTEAD OF DELETE AS
 BEGIN
 	DECLARE @room int
@@ -147,6 +143,7 @@ BEGIN
 END
 GO
 
+--Триггер для проверки на уникальность значений этажа и крыла добавляемых блоков--
 CREATE TRIGGER insertBlock ON Блоки
 INSTEAD OF INSERT AS
 	BEGIN
@@ -172,6 +169,7 @@ INSTEAD OF INSERT AS
 	END
 GO
 
+--Триггер на изменение статуса заявки--
 CREATE TRIGGER updateIssue ON Заявки
 INSTEAD OF UPDATE AS
 BEGIN
@@ -199,6 +197,7 @@ BEGIN
 END
 GO
 
+--Триггер на добавление вахты, в которой может дежурить только работник с должностью вахтера--
 ALTER TRIGGER addVaht On Вахты
 INSTEAD OF INSERT AS
 BEGIN
@@ -228,6 +227,7 @@ BEGIN
 END
 Go
 
+--Триггер на добавление дежурного в блок--
 CREATE TRIGGER addDuty ON Дежурство
 INSTEAD OF INSERT AS
 BEGIN
@@ -253,6 +253,7 @@ BEGIN
 END
 GO
 
+--Процедура добавления новой вахты--
 CREATE PROC insertVaht (@type varchar(127), @date datetime, @duration int, @worker int)
 AS
 IF EXISTS(SELECT * FROM Работники WHERE Работники.Код = @worker AND Работники.Должность = 'Вахтер')
@@ -267,6 +268,7 @@ RETURN 1
 END
 GO
 
+--Процедура обновления вахты--
 CREATE PROC updateVaht (@num int,@type varchar(127), @date datetime, @duration int, @worker int)
 AS
 IF EXISTS(SELECT * FROM Работники WHERE Работники.Код = @worker and Должность = 'Вахтер')
@@ -282,6 +284,7 @@ BEGIN
 END
 GO
 
+--Процедура Добавления заявки--
 ALTER PROC insertIssue (@title varchar(127), @text varchar(max), @author int)
 AS
 IF EXISTS(SELECT * FROM Проживающие WHERE Проживающие.Код = @author)
@@ -296,6 +299,7 @@ BEGIN
 END
 GO
 
+--Процедура обновления статуса заявки--
 CREATE PROC updateIssue (@num int, @status statusType)
 AS
 IF EXISTS(SELECT * FROM Заявки WHERE Заявки.Номер = @num and (Заявки.Статус = 'Открыта' OR Заявки.Статус = 'Выполняется'))
@@ -311,6 +315,7 @@ BEGIN
 END
 Go
 
+--Процедура добавления нового инвентаря--
 CREATE PROC insertInvent (@name varchar(127), @date datetime, @cost int, @room int)
 AS
 IF EXISTS(SELECT * FROM Комнаты WHERE Комнаты.Номер = @room)
@@ -325,6 +330,7 @@ BEGIN
 END
 GO
 
+--Процедура удаления инвентаря--
 CREATE PROC deleteInvent (@code int)
 AS
 IF EXISTS(SELECT * FROM Инвентарь WHERE Инвентарь.Код = @code)
@@ -339,6 +345,7 @@ BEGIN
 END
 GO
 
+--Процедура обновления инвентаря--
 CREATE PROC updateInvent (@code int, @name varchar(127), @date datetime, @cost int, @room int)
 AS
 IF EXISTS(SELECT * FROM Инвентарь WHERE Инвентарь.Код = @code)
@@ -354,19 +361,23 @@ BEGIN
 END
 GO
 
+--Процедура удаления вахты--
+CREATE PROC deleteVaht (@num int)
+AS
+IF EXISTS(SELECT * FROM Вахты WHERE Вахты.Номер = @num)
+BEGIN
+	DELETE Вахты
+	WHERE Вахты.Номер = @num
+	RETURN 0
+END
+ELSE
+BEGIN 
+	RETURN 1
+END
+GO
+
 CREATE PROC computeAllCost (@cost int output)
 AS
 SELECT @cost = sum(Стоимость)
 FROM Инвентарь
 GO
-
-
-EXEC updateIssue 3, 'Отклонена'
-
-EXEC insertIssue 'Ремонт',  'Сломалась психика' , 2
-GO
-SELECT * 
-FROM Проживающие
-
-SELECT * 
-FROM Заявки
