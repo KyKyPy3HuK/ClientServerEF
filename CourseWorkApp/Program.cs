@@ -18,7 +18,6 @@ namespace CourseWorkApp
             switch (loginForm.ShowDialog())
             {
                 case DialogResult.OK:
-
                     if (PassHashFunc(loginForm.passTextBox.Text.ToString())== passwordHash)
                         Application.Run(new MainForm());
                     else
@@ -29,7 +28,6 @@ namespace CourseWorkApp
                 default:
                     break;
             }
-            
         }
         static private long PassHashFunc(string arg)
         {

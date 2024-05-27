@@ -176,13 +176,13 @@
         private Label labelDate;
         private Label labelCost;
         private Label labelRoom;
-        private TextBox nameTextBox;
-        private DateTimePicker dateTimePicker;
-        private ComboBox roomComboBox;
-        private NumericUpDown costNumeric;
         private Button cancelBtn;
         private Button okBtn;
         private Label labelCode;
         private Label numLabel;
+        public TextBox nameTextBox;
+        public DateTimePicker dateTimePicker;
+        public ComboBox roomComboBox;
+        public NumericUpDown costNumeric;
     }
 }

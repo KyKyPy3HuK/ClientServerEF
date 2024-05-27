@@ -150,7 +150,7 @@
             codeLabel.TabIndex = 13;
             codeLabel.Text = "defНомер";
             // 
-            // vahtUpdDlg
+            // VahtUpdDlg
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -167,7 +167,7 @@
             Controls.Add(labelTime);
             Controls.Add(labelDate);
             Controls.Add(labelType);
-            Name = "vahtUpdDlg";
+            Name = "VahtUpdDlg";
             Text = "Обновить вахту";
             ((System.ComponentModel.ISupportInitialize)timeNumeric).EndInit();
             ResumeLayout(false);
@@ -180,13 +180,13 @@
         private Label labelDate;
         private Label labelTime;
         private Label labelWorker;
-        private DateTimePicker dateTimePicker;
-        private ComboBox typeComboBox;
-        private NumericUpDown timeNumeric;
         private Button cancelBtn;
         private Button okBtn;
-        private ComboBox workerComboBox;
         private Label labelCode;
         private Label codeLabel;
+        public DateTimePicker dateTimePicker;
+        public ComboBox typeComboBox;
+        public NumericUpDown timeNumeric;
+        public ComboBox workerComboBox;
     }
 }

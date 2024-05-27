@@ -65,7 +65,7 @@ namespace CourseWorkApp
             adapter.Fill(dataTable);
 
         }
-        
+
         private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             inventAdd inventAddDlg = new inventAdd();
@@ -227,6 +227,11 @@ namespace CourseWorkApp
                         break;
                     }
             }
+        }
+
+        private void вычислитьОбщуюСтоимостьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

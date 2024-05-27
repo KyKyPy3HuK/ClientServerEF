@@ -136,10 +136,10 @@
         private Label labelTitle;
         private Button cancelBtn;
         private Button okBtn;
-        private TextBox textTextBox1;
         private Label labelText;
-        private TextBox titleTextBox;
         private Label labelAutor;
-        private ComboBox AutorComboBox;
+        public TextBox textTextBox1;
+        public TextBox titleTextBox;
+        public ComboBox AutorComboBox;
     }
 }

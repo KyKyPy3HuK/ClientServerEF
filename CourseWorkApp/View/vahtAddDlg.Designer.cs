@@ -128,7 +128,7 @@
             comboBox1.Size = new Size(250, 28);
             comboBox1.TabIndex = 11;
             // 
-            // vahtAddDlg
+            // VahtAddDlg
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -143,7 +143,7 @@
             Controls.Add(labelTime);
             Controls.Add(labelDate);
             Controls.Add(labelType);
-            Name = "vahtAddDlg";
+            Name = "VahtAddDlg";
             Text = "Добавить вахту";
             ((System.ComponentModel.ISupportInitialize)costNumeric).EndInit();
             ResumeLayout(false);
@@ -156,11 +156,11 @@
         private Label labelDate;
         private Label labelTime;
         private Label labelWorker;
-        private DateTimePicker dateTimePicker;
-        private ComboBox roomComboBox;
-        private NumericUpDown costNumeric;
         private Button cancelBtn;
         private Button okBtn;
-        private ComboBox comboBox1;
+        public DateTimePicker dateTimePicker;
+        public ComboBox roomComboBox;
+        public NumericUpDown costNumeric;
+        public ComboBox comboBox1;
     }
 }

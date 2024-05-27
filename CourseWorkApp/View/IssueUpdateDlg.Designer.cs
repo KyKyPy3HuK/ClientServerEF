@@ -138,9 +138,9 @@
         private Label titleLabel;
         private TextBox textTextBox;
         private Label statusLabel;
-        private ComboBox statusComboBox;
         private Label labelText;
         private Button okBtn;
         private Button cancelBtn;
+        public ComboBox statusComboBox;
     }
 }

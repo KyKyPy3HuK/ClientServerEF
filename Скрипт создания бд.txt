@@ -35,7 +35,7 @@ BEGIN TRANSACTION addTables
 		Номер int PRIMARY KEY NOT NULL,
 		Этаж int NOT NULL,
 		Крыло int NOT NULL,
-		Тип varchar(127) NOT NULL
+		Тип blockType NOT NULL
 	)
 	GO
 	CREATE TABLE Комнаты (
@@ -59,19 +59,19 @@ BEGIN TRANSACTION addTables
 	)
 	GO
 	CREATE TABLE Заявки (
-		Номер int PRIMARY KEY NOT NULL v,
-		Тема varchar(127) NOT NULL,
-		Статус varchar(127) NOT NULL,
-		ДатаСоздания date NOT NULL,
-		Текст varchar(MAX),
-		Составитель int NOT NULL,
-		FOREIGN KEY (Составитель) REFERENCES Проживающие,
+	Номер int PRIMARY KEY NOT NULL IDENTITY(1,1),
+	Тема varchar(127) NOT NULL,
+	Статус statusType NOT NULL,
+	ДатаСоздания date NOT NULL default GETDATE(),
+	Текст varchar(MAX),
+	Составитель bigint NOT NULL,
+	FOREIGN KEY (Составитель) REFERENCES Проживающие,
 	)
-	GO +8(901)345-43-45
+	GO
 CREATE TABLE Инвентарь (
 	Код int PRIMARY KEY NOT NULL IDENTITY(1,1),
 	Название varchar(127) NOT NULL,
-	ДатаПоставки date NOT NULL,
+	ДатаПоставки date NOT NULL default GETDATE(),
 	Стоимость int NOT NULL,
 	Комната int NOT NULL,
 	FOREIGN KEY (Комната) REFERENCES Комнаты,
@@ -81,15 +81,15 @@ CREATE TABLE Инвентарь (
 		Номер int PRIMARY KEY NOT NULL IDENTITY(1,1),
 		Тип varchar(127) NOT NULL,
 		FOREIGN KEY (Тип) REFERENCES ТипыВахт,
-		ДатаНачала date NOT NULL,
+		ДатаНачала date NOT NULL default GETDATE(),
 		Длительность int NOT NULL,
-		Вахтер int,
+		Вахтер bigint,
 		FOREIGN KEY (Вахтер) REFERENCES Работники
 	)
 	GO
 	CREATE TABLE Дежурство(
 		Блок int PRIMARY KEY NOT NULL,
-		Дежурный int NOT NULL,
+		Дежурный bigint NOT NULL,
 		FOREIGN KEY(Блок) REFERENCES Блоки,
 		FOREIGN KEY(Дежурный) REFERENCES Работники
 	)

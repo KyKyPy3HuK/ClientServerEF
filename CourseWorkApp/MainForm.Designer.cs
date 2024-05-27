@@ -47,6 +47,7 @@
             menuStrip3 = new MenuStrip();
             добавитьToolStripMenuItem2 = new ToolStripMenuItem();
             обновитьСтатусToolStripMenuItem = new ToolStripMenuItem();
+            вычислитьОбщуюСтоимостьToolStripMenuItem = new ToolStripMenuItem();
             tabControl.SuspendLayout();
             vahtsTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)vahtsDgv).BeginInit();
@@ -173,7 +174,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { добавитьToolStripMenuItem, обновитьToolStripMenuItem, удалитьToolStripMenuItem1 });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { добавитьToolStripMenuItem, обновитьToolStripMenuItem, удалитьToolStripMenuItem1, вычислитьОбщуюСтоимостьToolStripMenuItem });
             menuStrip1.Location = new Point(3, 3);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(786, 28);
@@ -254,6 +255,13 @@
             обновитьСтатусToolStripMenuItem.Text = "Обновить статус";
             обновитьСтатусToolStripMenuItem.Click += обновитьСтатусToolStripMenuItem_Click;
             // 
+            // вычислитьОбщуюСтоимостьToolStripMenuItem
+            // 
+            вычислитьОбщуюСтоимостьToolStripMenuItem.Name = "вычислитьОбщуюСтоимостьToolStripMenuItem";
+            вычислитьОбщуюСтоимостьToolStripMenuItem.Size = new Size(227, 24);
+            вычислитьОбщуюСтоимостьToolStripMenuItem.Text = "Вычислить общую стоимость";
+            вычислитьОбщуюСтоимостьToolStripMenuItem.Click += вычислитьОбщуюСтоимостьToolStripMenuItem_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -304,5 +312,6 @@
         private ToolStripMenuItem обновитьСтатусToolStripMenuItem;
         private ToolStripMenuItem обновитьToolStripMenuItem;
         private ToolStripMenuItem удалитьToolStripMenuItem1;
+        private ToolStripMenuItem вычислитьОбщуюСтоимостьToolStripMenuItem;
     }
 }
