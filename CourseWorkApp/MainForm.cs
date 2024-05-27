@@ -145,6 +145,35 @@ namespace CourseWorkApp
             return dataList;
         }
 
+        List<string> FillvahtWorkerNumbers()
+        {
+            List<string> dataList = new List<string>();
+
+            SqlCommand addWorkersCmd = conn.CreateCommand();
+            addWorkersCmd.CommandText = "SELECT Работники.Код, Работники.ФИО FROM Работники WHERE Должность = 'Вахтер'";
+            var reader = addWorkersCmd.ExecuteReader();
+            while (reader.Read())
+            {
+                dataList.Add(reader["Код"].ToString() + " " + reader["ФИО"]);
+            }
+            reader.Close();
+            return dataList;
+        }
+        List<string> FillVahtTypes()
+        {
+            List<string> dataList = new List<string>();
+
+            SqlCommand addVahtTypesCmd = conn.CreateCommand();
+            addVahtTypesCmd.CommandText = "SELECT ТипыВахт.Название FROM ТипыВахт";
+            var reader = addVahtTypesCmd.ExecuteReader();
+            while (reader.Read())
+            {
+                dataList.Add(reader["Название"].ToString());
+            }
+            reader.Close();
+            return dataList;
+        }
+
         private void обновитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DataGridViewRow selectedRow = inventDgv.SelectedRows[0];
@@ -231,11 +260,20 @@ namespace CourseWorkApp
         private void добавитьToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             VahtAddDlg vahtAddDlg = new VahtAddDlg();
-
+            vahtAddDlg.typeComboBox.DataSource = FillVahtTypes();
+            vahtAddDlg.workerComboBox.DataSource = FillvahtWorkerNumbers();
             switch (vahtAddDlg.ShowDialog())
             {
                 case DialogResult.OK:
                     {
+                        SqlCommand cmd = new SqlCommand("insertVaht", conn);
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@type", vahtAddDlg.typeComboBox.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@date", vahtAddDlg.dateTimePicker.Value);
+                        cmd.Parameters.AddWithValue("@duration", vahtAddDlg.durationNumeric.Value);
+                        cmd.Parameters.AddWithValue("@worker",int.Parse(vahtAddDlg.workerComboBox.SelectedItem.ToString().Split(" ")[0]));
+                        cmd.ExecuteNonQuery();
+                        FillVahtDgv();
                         break;
                     }
                 case DialogResult.Cancel:
@@ -253,10 +291,33 @@ namespace CourseWorkApp
         private void изменитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             VahtUpdDlg vahtUpdDlg = new VahtUpdDlg();
+            DataGridViewRow selectedRow = vahtsDgv.SelectedRows[0];
+            int code = (int)selectedRow.Cells[0].Value;
+            string type = (string)selectedRow.Cells[1].Value;
+            DateTime date = (DateTime)selectedRow.Cells[2].Value;
+            int duration = (int)selectedRow.Cells[3].Value;
+            string worker = selectedRow.Cells[4].Value.ToString() + " " + (string)selectedRow.Cells[5].Value;
+
+            vahtUpdDlg.codeLabel.Text = code.ToString();
+            vahtUpdDlg.typeComboBox.DataSource = FillVahtTypes();
+            vahtUpdDlg.typeComboBox.SelectedItem = type;
+            vahtUpdDlg.dateTimePicker.Value = date;
+            vahtUpdDlg.timeNumeric.Value = duration;
+            vahtUpdDlg.workerComboBox.DataSource = FillvahtWorkerNumbers();
+            vahtUpdDlg.workerComboBox.SelectedItem = worker;
             switch (vahtUpdDlg.ShowDialog())
             {
                 case DialogResult.OK:
                     {
+                        SqlCommand cmd = new SqlCommand("updateVaht", conn);
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@num", code);
+                        cmd.Parameters.AddWithValue("@type", vahtUpdDlg.typeComboBox.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@date", vahtUpdDlg.dateTimePicker.Value);
+                        cmd.Parameters.AddWithValue("@duration", vahtUpdDlg.timeNumeric.Value);
+                        cmd.Parameters.AddWithValue("@worker", int.Parse(vahtUpdDlg.workerComboBox.SelectedItem.ToString().Split(" ")[0]));
+                        cmd.ExecuteNonQuery();
+                        FillVahtDgv();
                         break;
                     }
                 case DialogResult.Cancel:
@@ -273,10 +334,28 @@ namespace CourseWorkApp
         private void удалитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             VahtRemoveDlg vahtRemoveDlg = new VahtRemoveDlg();
+
+            DataGridViewRow selectedRow = vahtsDgv.SelectedRows[0];
+            int code = (int)selectedRow.Cells[0].Value;
+            string type = (string)selectedRow.Cells[1].Value;
+            DateTime date = (DateTime)selectedRow.Cells[2].Value;
+            int duration = (int)selectedRow.Cells[3].Value;
+            string worker = selectedRow.Cells[4].Value.ToString() + " " + (string)selectedRow.Cells[5].Value;
+
+            vahtRemoveDlg.numLabel.Text = code.ToString();
+            vahtRemoveDlg.typeLabel.Text = type;
+            vahtRemoveDlg.dateLabel.Text = date.ToString();
+            vahtRemoveDlg.timeLabel.Text = duration.ToString();
+            vahtRemoveDlg.workerLabel.Text = worker;
             switch (vahtRemoveDlg.ShowDialog())
             {
                 case DialogResult.OK:
                     {
+                        SqlCommand cmd = new SqlCommand("deleteVaht", conn);
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@num", code);
+                        cmd.ExecuteNonQuery();
+                        FillVahtDgv();
                         break;
                     }
                 case DialogResult.Cancel:

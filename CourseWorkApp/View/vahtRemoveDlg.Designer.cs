@@ -153,7 +153,7 @@
             workerLabel.TabIndex = 11;
             workerLabel.Text = "defВахтер";
             // 
-            // vahtRemoveDlg
+            // VahtRemoveDlg
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -170,7 +170,7 @@
             Controls.Add(labelType);
             Controls.Add(numLabel);
             Controls.Add(labelNum);
-            Name = "vahtRemoveDlg";
+            Name = "VahtRemoveDlg";
             Text = "Удаление вахты";
             ResumeLayout(false);
             PerformLayout();
@@ -179,16 +179,16 @@
         #endregion
 
         private Label labelNum;
-        private Label numLabel;
         private Label labelType;
-        private Label typeLabel;
         private Label labelDate;
-        private Label dateLabel;
         private Label labelTime;
-        private Label timeLabel;
         private Button cancelBtn;
         private Button delBtn;
         private Label labelWorker;
-        private Label workerLabel;
+        public Label numLabel;
+        public Label typeLabel;
+        public Label dateLabel;
+        public Label timeLabel;
+        public Label workerLabel;
     }
 }

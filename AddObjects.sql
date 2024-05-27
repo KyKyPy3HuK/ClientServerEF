@@ -199,7 +199,7 @@ BEGIN
 END
 GO
 
-CREATE TRIGGER addVaht On Вахты
+ALTER TRIGGER addVaht On Вахты
 INSTEAD OF INSERT AS
 BEGIN
 	DECLARE @vaht int
@@ -209,7 +209,7 @@ BEGIN
 	DECLARE @worker int
 	
 	DECLARE vahtCur CURSOR FOR
-		SELECT inserted.Номер, inserted.Вахтер
+		SELECT *
 		FROM inserted
 
 	OPEN vahtCur

@@ -183,10 +183,10 @@
         private Button cancelBtn;
         private Button okBtn;
         private Label labelCode;
-        private Label codeLabel;
         public DateTimePicker dateTimePicker;
         public ComboBox typeComboBox;
         public NumericUpDown timeNumeric;
         public ComboBox workerComboBox;
+        public Label codeLabel;
     }
 }

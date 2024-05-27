@@ -33,12 +33,12 @@
             labelTime = new Label();
             labelWorker = new Label();
             dateTimePicker = new DateTimePicker();
-            roomComboBox = new ComboBox();
-            costNumeric = new NumericUpDown();
+            typeComboBox = new ComboBox();
+            durationNumeric = new NumericUpDown();
             cancelBtn = new Button();
             okBtn = new Button();
-            comboBox1 = new ComboBox();
-            ((System.ComponentModel.ISupportInitialize)costNumeric).BeginInit();
+            workerComboBox = new ComboBox();
+            ((System.ComponentModel.ISupportInitialize)durationNumeric).BeginInit();
             SuspendLayout();
             // 
             // labelType
@@ -85,20 +85,20 @@
             dateTimePicker.Size = new Size(250, 27);
             dateTimePicker.TabIndex = 6;
             // 
-            // roomComboBox
+            // typeComboBox
             // 
-            roomComboBox.FormattingEnabled = true;
-            roomComboBox.Location = new Point(218, 12);
-            roomComboBox.Name = "roomComboBox";
-            roomComboBox.Size = new Size(250, 28);
-            roomComboBox.TabIndex = 7;
+            typeComboBox.FormattingEnabled = true;
+            typeComboBox.Location = new Point(218, 12);
+            typeComboBox.Name = "typeComboBox";
+            typeComboBox.Size = new Size(250, 28);
+            typeComboBox.TabIndex = 7;
             // 
-            // costNumeric
+            // durationNumeric
             // 
-            costNumeric.Location = new Point(218, 78);
-            costNumeric.Name = "costNumeric";
-            costNumeric.Size = new Size(122, 27);
-            costNumeric.TabIndex = 8;
+            durationNumeric.Location = new Point(218, 78);
+            durationNumeric.Name = "durationNumeric";
+            durationNumeric.Size = new Size(122, 27);
+            durationNumeric.TabIndex = 8;
             // 
             // cancelBtn
             // 
@@ -120,24 +120,24 @@
             okBtn.Text = "Добавить";
             okBtn.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // workerComboBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(218, 111);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(250, 28);
-            comboBox1.TabIndex = 11;
+            workerComboBox.FormattingEnabled = true;
+            workerComboBox.Location = new Point(218, 111);
+            workerComboBox.Name = "workerComboBox";
+            workerComboBox.Size = new Size(250, 28);
+            workerComboBox.TabIndex = 11;
             // 
             // VahtAddDlg
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(480, 184);
-            Controls.Add(comboBox1);
+            Controls.Add(workerComboBox);
             Controls.Add(okBtn);
             Controls.Add(cancelBtn);
-            Controls.Add(costNumeric);
-            Controls.Add(roomComboBox);
+            Controls.Add(durationNumeric);
+            Controls.Add(typeComboBox);
             Controls.Add(dateTimePicker);
             Controls.Add(labelWorker);
             Controls.Add(labelTime);
@@ -145,7 +145,7 @@
             Controls.Add(labelType);
             Name = "VahtAddDlg";
             Text = "Добавить вахту";
-            ((System.ComponentModel.ISupportInitialize)costNumeric).EndInit();
+            ((System.ComponentModel.ISupportInitialize)durationNumeric).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -159,8 +159,8 @@
         private Button cancelBtn;
         private Button okBtn;
         public DateTimePicker dateTimePicker;
-        public ComboBox roomComboBox;
-        public NumericUpDown costNumeric;
-        public ComboBox comboBox1;
+        public ComboBox typeComboBox;
+        public NumericUpDown durationNumeric;
+        public ComboBox workerComboBox;
     }
 }
