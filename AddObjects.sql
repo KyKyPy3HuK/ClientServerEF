@@ -170,7 +170,7 @@ INSTEAD OF INSERT AS
 GO
 
 --Триггер на изменение статуса заявки--
-CREATE TRIGGER updateIssue ON Заявки
+CREATE TRIGGER updateIssueT ON Заявки
 INSTEAD OF UPDATE AS
 BEGIN
 	DECLARE @issue int
@@ -198,14 +198,14 @@ END
 GO
 
 --Триггер на добавление вахты, в которой может дежурить только работник с должностью вахтера--
-ALTER TRIGGER addVaht On Вахты
+CREATE TRIGGER addVaht On Вахты
 INSTEAD OF INSERT AS
 BEGIN
 	DECLARE @vaht int
 	DECLARE @type varchar(127)
 	DECLARE @date datetime
 	DECLARE @duration int
-	DECLARE @worker int
+	DECLARE @worker bigint
 	
 	DECLARE vahtCur CURSOR FOR
 		SELECT *
@@ -231,14 +231,14 @@ Go
 CREATE TRIGGER addDuty ON Дежурство
 INSTEAD OF INSERT AS
 BEGIN
-	DECLARE @worker int
+	DECLARE @worker bigint
 	DECLARE @block int
 	DECLARE dutyCur CURSOR FOR
 		SELECT inserted.Блок, inserted.Дежурный
 		FROM inserted
 
-	OPEN vahtCur
-		FETCH NEXT FROM vahtCur INTO @block, @worker
+	OPEN dutyCur
+		FETCH NEXT FROM dutyCur INTO @block, @worker
 		WHILE @@FETCH_STATUS = 0
 		BEGIN
 			IF EXISTS(SELECT * FROM Работники WHERE Работники.Код = @worker AND Работники.Должность = 'Уборщик')
@@ -246,15 +246,15 @@ BEGIN
 				INSERT INTO Дежурство VALUES
 				(@block, @worker)
 			END
-			FETCH NEXT FROM vahtCur INTO @block, @worker
+			FETCH NEXT FROM dutyCur INTO @block, @worker
 		END
-		CLOSE vahtCur
-		DEALLOCATE vahtCur
+		CLOSE dutyCur
+		DEALLOCATE dutyCur
 END
 GO
 
 --Процедура добавления новой вахты--
-CREATE PROC insertVaht (@type varchar(127), @date datetime, @duration int, @worker int)
+CREATE PROC insertVaht (@type varchar(127), @date datetime, @duration int, @worker bigint)
 AS
 IF EXISTS(SELECT * FROM Работники WHERE Работники.Код = @worker AND Работники.Должность = 'Вахтер')
 BEGIN
@@ -269,7 +269,7 @@ END
 GO
 
 --Процедура обновления вахты--
-CREATE PROC updateVaht (@num int,@type varchar(127), @date datetime, @duration int, @worker int)
+CREATE PROC updateVaht (@num int,@type varchar(127), @date datetime, @duration int, @worker bigint)
 AS
 IF EXISTS(SELECT * FROM Работники WHERE Работники.Код = @worker and Должность = 'Вахтер')
 BEGIN
@@ -285,7 +285,7 @@ END
 GO
 
 --Процедура Добавления заявки--
-ALTER PROC insertIssue (@title varchar(127), @text varchar(max), @author int)
+CREATE PROC insertIssue (@title varchar(127), @text varchar(max), @author bigint)
 AS
 IF EXISTS(SELECT * FROM Проживающие WHERE Проживающие.Код = @author)
 BEGIN

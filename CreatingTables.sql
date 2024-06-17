@@ -65,7 +65,7 @@ BEGIN TRANSACTION addTables
 	ДатаСоздания date NOT NULL default GETDATE(),
 	Текст varchar(MAX),
 	Составитель bigint NOT NULL,
-	FOREIGN KEY (Составитель) REFERENCES Проживающие,
+	FOREIGN KEY (Составитель) REFERENCES Проживающие
 	)
 	GO
 CREATE TABLE Инвентарь (

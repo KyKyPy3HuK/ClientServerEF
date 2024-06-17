@@ -271,7 +271,7 @@ namespace CourseWorkApp
                         cmd.Parameters.AddWithValue("@type", vahtAddDlg.typeComboBox.SelectedItem.ToString());
                         cmd.Parameters.AddWithValue("@date", vahtAddDlg.dateTimePicker.Value);
                         cmd.Parameters.AddWithValue("@duration", vahtAddDlg.durationNumeric.Value);
-                        cmd.Parameters.AddWithValue("@worker",int.Parse(vahtAddDlg.workerComboBox.SelectedItem.ToString().Split(" ")[0]));
+                        cmd.Parameters.AddWithValue("@worker",long.Parse(vahtAddDlg.workerComboBox.SelectedItem.ToString().Split(" ")[0]));
                         cmd.ExecuteNonQuery();
                         FillVahtDgv();
                         break;
@@ -315,7 +315,7 @@ namespace CourseWorkApp
                         cmd.Parameters.AddWithValue("@type", vahtUpdDlg.typeComboBox.SelectedItem.ToString());
                         cmd.Parameters.AddWithValue("@date", vahtUpdDlg.dateTimePicker.Value);
                         cmd.Parameters.AddWithValue("@duration", vahtUpdDlg.timeNumeric.Value);
-                        cmd.Parameters.AddWithValue("@worker", int.Parse(vahtUpdDlg.workerComboBox.SelectedItem.ToString().Split(" ")[0]));
+                        cmd.Parameters.AddWithValue("@worker", long.Parse(vahtUpdDlg.workerComboBox.SelectedItem.ToString().Split(" ")[0]));
                         cmd.ExecuteNonQuery();
                         FillVahtDgv();
                         break;
@@ -383,7 +383,7 @@ namespace CourseWorkApp
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@title", issueAddDlg.titleTextBox.Text);
                         cmd.Parameters.AddWithValue("@text", issueAddDlg.textTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@author", int.Parse(issueAddDlg.AutorComboBox.SelectedItem.ToString()));
+                        cmd.Parameters.AddWithValue("@author", long.Parse(issueAddDlg.AutorComboBox.SelectedItem.ToString()));
                         cmd.ExecuteNonQuery();
                         FillIssueDgv();
                         break;
