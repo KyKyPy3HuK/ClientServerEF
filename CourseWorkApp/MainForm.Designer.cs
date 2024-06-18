@@ -42,12 +42,12 @@
             добавитьToolStripMenuItem = new ToolStripMenuItem();
             обновитьToolStripMenuItem = new ToolStripMenuItem();
             удалитьToolStripMenuItem1 = new ToolStripMenuItem();
+            вычислитьОбщуюСтоимостьToolStripMenuItem = new ToolStripMenuItem();
             zayavTabPage = new TabPage();
             issuesDgv = new DataGridView();
             menuStrip3 = new MenuStrip();
             добавитьToolStripMenuItem2 = new ToolStripMenuItem();
             обновитьСтатусToolStripMenuItem = new ToolStripMenuItem();
-            вычислитьОбщуюСтоимостьToolStripMenuItem = new ToolStripMenuItem();
             tabControl.SuspendLayout();
             vahtsTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)vahtsDgv).BeginInit();
@@ -202,6 +202,13 @@
             удалитьToolStripMenuItem1.Text = "Удалить";
             удалитьToolStripMenuItem1.Click += удалитьToolStripMenuItem1_Click;
             // 
+            // вычислитьОбщуюСтоимостьToolStripMenuItem
+            // 
+            вычислитьОбщуюСтоимостьToolStripMenuItem.Name = "вычислитьОбщуюСтоимостьToolStripMenuItem";
+            вычислитьОбщуюСтоимостьToolStripMenuItem.Size = new Size(227, 24);
+            вычислитьОбщуюСтоимостьToolStripMenuItem.Text = "Вычислить общую стоимость";
+            вычислитьОбщуюСтоимостьToolStripMenuItem.Click += вычислитьОбщуюСтоимостьToolStripMenuItem_Click;
+            // 
             // zayavTabPage
             // 
             zayavTabPage.Controls.Add(issuesDgv);
@@ -255,13 +262,6 @@
             обновитьСтатусToolStripMenuItem.Text = "Обновить статус";
             обновитьСтатусToolStripMenuItem.Click += обновитьСтатусToolStripMenuItem_Click;
             // 
-            // вычислитьОбщуюСтоимостьToolStripMenuItem
-            // 
-            вычислитьОбщуюСтоимостьToolStripMenuItem.Name = "вычислитьОбщуюСтоимостьToolStripMenuItem";
-            вычислитьОбщуюСтоимостьToolStripMenuItem.Size = new Size(227, 24);
-            вычислитьОбщуюСтоимостьToolStripMenuItem.Text = "Вычислить общую стоимость";
-            вычислитьОбщуюСтоимостьToolStripMenuItem.Click += вычислитьОбщуюСтоимостьToolStripMenuItem_Click;
-            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -270,7 +270,7 @@
             Controls.Add(tabControl);
             MainMenuStrip = menuStrip1;
             Name = "MainForm";
-            Text = "MainForm";
+            Text = "Основное окно";
             tabControl.ResumeLayout(false);
             vahtsTabPage.ResumeLayout(false);
             vahtsTabPage.PerformLayout();

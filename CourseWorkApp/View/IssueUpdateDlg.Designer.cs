@@ -60,7 +60,7 @@
             // 
             // textTextBox
             // 
-            textTextBox.Location = new Point(12, 146);
+            textTextBox.Location = new Point(12, 169);
             textTextBox.Multiline = true;
             textTextBox.Name = "textTextBox";
             textTextBox.ReadOnly = true;
@@ -89,7 +89,7 @@
             // labelText
             // 
             labelText.AutoSize = true;
-            labelText.Location = new Point(12, 123);
+            labelText.Location = new Point(12, 146);
             labelText.Name = "labelText";
             labelText.Size = new Size(45, 20);
             labelText.TabIndex = 5;
@@ -98,7 +98,7 @@
             // okBtn
             // 
             okBtn.DialogResult = DialogResult.OK;
-            okBtn.Location = new Point(344, 334);
+            okBtn.Location = new Point(344, 357);
             okBtn.Name = "okBtn";
             okBtn.Size = new Size(128, 29);
             okBtn.TabIndex = 4;
@@ -108,7 +108,7 @@
             // cancelBtn
             // 
             cancelBtn.DialogResult = DialogResult.Cancel;
-            cancelBtn.Location = new Point(210, 334);
+            cancelBtn.Location = new Point(210, 357);
             cancelBtn.Name = "cancelBtn";
             cancelBtn.Size = new Size(128, 29);
             cancelBtn.TabIndex = 3;
@@ -118,7 +118,7 @@
             // autorLabel
             // 
             autorLabel.AutoSize = true;
-            autorLabel.Location = new Point(12, 338);
+            autorLabel.Location = new Point(12, 126);
             autorLabel.Name = "autorLabel";
             autorLabel.Size = new Size(51, 20);
             autorLabel.TabIndex = 6;
@@ -137,7 +137,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(482, 373);
+            ClientSize = new Size(482, 398);
             Controls.Add(dataLabel);
             Controls.Add(autorLabel);
             Controls.Add(cancelBtn);

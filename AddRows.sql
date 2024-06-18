@@ -1,6 +1,6 @@
 use master
 GO
-use CourseWorkSQL
+use CW
 GO
 BEGIN TRAN addRows
 

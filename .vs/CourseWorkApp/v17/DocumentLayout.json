@@ -1,58 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\",
+  "WorkspaceRootPath": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\\u043F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0439.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\\u043F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0439.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\cwdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\cwdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\\u0438\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u0438\u0437\u0430\u0446\u0438\u044Freserved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\\u0438\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u0438\u0437\u0430\u0446\u0438\u044Freserved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\users\\pozer\\desktop\\clientserveref\\courseworkapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\\u0434\u043E\u043B\u0436\u043D\u043E\u0441\u0442\u044C.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\\u0434\u043E\u043B\u0436\u043D\u043E\u0441\u0442\u044C.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\users\\pozer\\desktop\\clientserveref\\courseworkapp\\courseworkapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\courseworkapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\\u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\\u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\users\\pozer\\desktop\\clientserveref\\courseworkapp\\view\\inventallcostdlg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\view\\inventallcostdlg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\\u0437\u0430\u044F\u0432\u043A\u0430.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\\u0437\u0430\u044F\u0432\u043A\u0430.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\users\\pozer\\desktop\\clientserveref\\courseworkapp\\view\\inventadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\view\\inventadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\\u0432\u0430\u0445\u0442\u0430.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\\u0432\u0430\u0445\u0442\u0430.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|C:\\Users\\Pozer\\Desktop\\ClientServerEF\\courseworkapp\\view\\inventadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\view\\inventadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\\u0431\u043B\u043E\u043A.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\\u0431\u043B\u043E\u043A.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\users\\pozer\\desktop\\clientserveref\\courseworkapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\\u0442\u0438\u043F\u0431\u043B\u043E\u043A\u0430.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\\u0442\u0438\u043F\u0431\u043B\u043E\u043A\u0430.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\users\\pozer\\desktop\\clientserveref\\courseworkapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\\u043A\u043E\u043C\u043D\u0430\u0442\u0430.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\\u043A\u043E\u043C\u043D\u0430\u0442\u0430.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|C:\\Users\\Pozer\\Desktop\\ClientServerEF\\courseworkapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\\u0438\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u044C.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\\u0438\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u044C.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|c:\\\u043F\u0440\u0438\u043A\u043E\u043B\u044B\\studfiles\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0441\u043F\u0431\u0434\\\u043A\u0443\u0440\u0441\u0430\u0447\\clientserveref\\courseworkapp\\model\\\u0442\u0438\u043F\u043F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0435\u0433\u043E.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\model\\\u0442\u0438\u043F\u043F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0435\u0433\u043E.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|C:\\Users\\Pozer\\Desktop\\ClientServerEF\\courseworkapp\\view\\issueupdatedlg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A3B9B05-150A-40CF-85B2-2A2BA8D27054}|CourseWorkApp\\CourseWorkApp.csproj|solutionrelative:courseworkapp\\view\\issueupdatedlg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,173 +46,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u0438\u0437\u0430\u0446\u0438\u044FReserved.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u0438\u0437\u0430\u0446\u0438\u044FReserved.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u0438\u0437\u0430\u0446\u0438\u044FReserved.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u0438\u0437\u0430\u0446\u0438\u044FReserved.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u0438\u0437\u0430\u0446\u0438\u044FReserved.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T20:30:39.064Z",
+              "DocumentIndex": 1,
+              "Title": "CourseWorkApp",
+              "DocumentMoniker": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\CourseWorkApp.csproj",
+              "RelativeDocumentMoniker": "CourseWorkApp\\CourseWorkApp.csproj",
+              "ToolTip": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\CourseWorkApp.csproj",
+              "RelativeToolTip": "CourseWorkApp\\CourseWorkApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-17T14:44:07.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "\u0412\u0430\u0445\u0442\u0430.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0412\u0430\u0445\u0442\u0430.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\\u0412\u0430\u0445\u0442\u0430.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0412\u0430\u0445\u0442\u0430.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\\u0412\u0430\u0445\u0442\u0430.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "inventAllCostDlg.cs",
+              "DocumentMoniker": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\View\\inventAllCostDlg.cs",
+              "RelativeDocumentMoniker": "CourseWorkApp\\View\\inventAllCostDlg.cs",
+              "ToolTip": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\View\\inventAllCostDlg.cs",
+              "RelativeToolTip": "CourseWorkApp\\View\\inventAllCostDlg.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T20:15:22.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "\u0417\u0430\u044F\u0432\u043A\u0430.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0417\u0430\u044F\u0432\u043A\u0430.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\\u0417\u0430\u044F\u0432\u043A\u0430.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0417\u0430\u044F\u0432\u043A\u0430.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\\u0417\u0430\u044F\u0432\u043A\u0430.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAwA0AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T20:11:33.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "\u0414\u043E\u043B\u0436\u043D\u043E\u0441\u0442\u044C.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0414\u043E\u043B\u0436\u043D\u043E\u0441\u0442\u044C.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\\u0414\u043E\u043B\u0436\u043D\u043E\u0441\u0442\u044C.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0414\u043E\u043B\u0436\u043D\u043E\u0441\u0442\u044C.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\\u0414\u043E\u043B\u0436\u043D\u043E\u0441\u0442\u044C.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T19:57:05.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "\u0420\u0430\u0431\u043E\u0442\u043D\u0438\u043A.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0420\u0430\u0431\u043E\u0442\u043D\u0438\u043A.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\\u0420\u0430\u0431\u043E\u0442\u043D\u0438\u043A.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0420\u0430\u0431\u043E\u0442\u043D\u0438\u043A.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\\u0420\u0430\u0431\u043E\u0442\u043D\u0438\u043A.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T19:55:37.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "\u0411\u043B\u043E\u043A.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0411\u043B\u043E\u043A.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\\u0411\u043B\u043E\u043A.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0411\u043B\u043E\u043A.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\\u0411\u043B\u043E\u043A.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAADwvxUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T19:52:59.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "\u0422\u0438\u043F\u0411\u043B\u043E\u043A\u0430.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0422\u0438\u043F\u0411\u043B\u043E\u043A\u0430.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\\u0422\u0438\u043F\u0411\u043B\u043E\u043A\u0430.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0422\u0438\u043F\u0411\u043B\u043E\u043A\u0430.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\\u0422\u0438\u043F\u0411\u043B\u043E\u043A\u0430.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T19:52:14.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "\u041A\u043E\u043C\u043D\u0430\u0442\u0430.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u041A\u043E\u043C\u043D\u0430\u0442\u0430.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\\u041A\u043E\u043C\u043D\u0430\u0442\u0430.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u041A\u043E\u043C\u043D\u0430\u0442\u0430.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\\u041A\u043E\u043C\u043D\u0430\u0442\u0430.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAUwAwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T19:51:10.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u044C.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u044C.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u044C.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u044C.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u044C.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBYAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T19:44:38.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "\u0422\u0438\u043F\u041F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0435\u0433\u043E.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0422\u0438\u043F\u041F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0435\u0433\u043E.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\\u0422\u0438\u043F\u041F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0435\u0433\u043E.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u0422\u0438\u043F\u041F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0435\u0433\u043E.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\\u0422\u0438\u043F\u041F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0435\u0433\u043E.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAD4vxAAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T13:25:39.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "\u041F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0439.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u041F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0439.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\\u041F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0439.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\\u041F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0439.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\\u041F\u0440\u043E\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0439.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABsAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T13:17:03.467Z",
+              "WhenOpened": "2024-06-17T10:12:13.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\MainForm.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\MainForm.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\MainForm.cs",
-              "RelativeToolTip": "CourseWorkApp\\MainForm.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAwAAAA",
+              "Title": "inventAdd.cs",
+              "DocumentMoniker": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\View\\inventAdd.cs",
+              "RelativeDocumentMoniker": "CourseWorkApp\\View\\inventAdd.cs",
+              "ToolTip": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\View\\inventAdd.cs",
+              "RelativeToolTip": "CourseWorkApp\\View\\inventAdd.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAABBwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T13:39:41.561Z"
+              "WhenOpened": "2024-06-17T10:12:01.945Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CWDBContext.cs",
-              "DocumentMoniker": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\CWDBContext.cs",
-              "RelativeDocumentMoniker": "CourseWorkApp\\Model\\CWDBContext.cs",
-              "ToolTip": "C:\\\u041F\u0440\u0438\u043A\u043E\u043B\u044B\\StudFiles\\\u0423\u0447\u0435\u0431\u0430\\\u041A\u0421\u041F\u0411\u0414\\\u041A\u0443\u0440\u0441\u0430\u0447\\ClientServerEF\\CourseWorkApp\\Model\\CWDBContext.cs",
-              "RelativeToolTip": "CourseWorkApp\\Model\\CWDBContext.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAIwA8AAAAMAAAA",
+              "DocumentIndex": 4,
+              "Title": "inventAdd.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\View\\inventAdd.cs",
+              "RelativeDocumentMoniker": "CourseWorkApp\\View\\inventAdd.cs",
+              "ToolTip": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\View\\inventAdd.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "CourseWorkApp\\View\\inventAdd.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T13:20:05.261Z"
+              "WhenOpened": "2024-06-17T10:11:57.121Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\MainForm.cs",
+              "RelativeDocumentMoniker": "CourseWorkApp\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\MainForm.cs",
+              "RelativeToolTip": "CourseWorkApp\\MainForm.cs",
+              "ViewState": "AQIAALEAAAAAAAAAAAAAALoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T10:09:55.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\Program.cs",
+              "RelativeDocumentMoniker": "CourseWorkApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\Program.cs",
+              "RelativeToolTip": "CourseWorkApp\\Program.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAuwCUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T10:08:30.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\MainForm.cs",
+              "RelativeDocumentMoniker": "CourseWorkApp\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "CourseWorkApp\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T10:04:34.071Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IssueUpdateDlg.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\View\\IssueUpdateDlg.cs",
+              "RelativeDocumentMoniker": "CourseWorkApp\\View\\IssueUpdateDlg.cs",
+              "ToolTip": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\View\\IssueUpdateDlg.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "CourseWorkApp\\View\\IssueUpdateDlg.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T09:40:51.399Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\App.config",
+              "RelativeDocumentMoniker": "CourseWorkApp\\App.config",
+              "ToolTip": "C:\\Users\\Pozer\\Desktop\\ClientServerEF\\CourseWorkApp\\App.config",
+              "RelativeToolTip": "CourseWorkApp\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-17T09:07:24.923Z",
+              "EditorCaption": ""
             }
           ]
         }
